@@ -1,0 +1,118 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.welcomeContainer {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+.welcomeContainer h2 {
+    font-weight: normal;
+}
+
+.projectCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.projectCard {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin: 10px;
+    width: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.projectCard img {
+    width: 100%;
+   max-width: 90%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.projectCardInfo {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectCardInfo h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.projectCardInfo p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    max-width: 900px;
+}
+
+.projectCardButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.projectCardButtons a {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.projectCardButtons a:hover {
+    background-color: grey;
+}
+
+.projectCard, .projectCard img, .projectCardButtons a {
+    border-radius: 5px;
+}
+
+.githubLink {
+    text-align: center;
+}
+
+.githubLink img {
+    width: 60px;
+}
+
+.portfolioFooter {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .projectCard {
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+.projectCardsContainer {
+    justify-content: center;    
+}
+.projectCard {
+   width: 90%;
+}
+}
